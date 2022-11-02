@@ -539,6 +539,7 @@ GameObject:
   - component: {fileID: 1896842639}
   - component: {fileID: 1896842641}
   - component: {fileID: 1896842640}
+  - component: {fileID: 1896842645}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -585,6 +586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1896842641}
+  animator: {fileID: 1896842645}
   runSpeed: 20
 --- !u!114 &1896842641
 MonoBehaviour:
@@ -600,9 +602,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MovementSmoothing: 0.05
   OnLandEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!212 &1896842642
@@ -695,3 +694,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!95 &1896842645
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896842638}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 15b7227bdd13acd498678be3c90889b7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
