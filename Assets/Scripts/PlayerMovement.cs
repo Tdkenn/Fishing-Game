@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
     }
 
-    void FixedUpdate()
+    void LateUpdate()
     {
         // Move our character
         controller.Move(horizontalMove * Time.fixedDeltaTime);
